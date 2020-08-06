@@ -1,3 +1,5 @@
 .Content{
-    margin-top: 16px;
+    margin-top: 76px;
+    background: rgb(26,69,93);
+background: radial-gradient(circle, rgba(26,69,93,1) 14%, rgba(34,22,80,1) 100%, rgba(68,68,135,1) 100%);
 }
