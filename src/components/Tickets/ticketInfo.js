@@ -9,18 +9,12 @@ class TicketInfo extends Component {
     render(){
         let info = null;
 
-        //let id1= "square1";
-       // let id2 = "square2";
-       // let id3 = "square3";
-
-        //const handleOptionChange = () => {
-          //this.id3 = "square1";
-          //this.id2 = "square5";
-            //return id3, id2;
-        //}
+   // выбор вариантов расположения билетов и их информации
+   // к каждому элементу добавлена ссылка на адрес страницы, который используется как переменная для выбора
+   // варианта расположения билетов
 
         switch (this.props.type){
-     
+             //вариант с билетом на 30 мая в центре
              case ('may30') :
              info = <div id="hexGrid">
                  <div class="hex" id = "square3" >  <a href="#square3"></a>  <div class="hexIn">
@@ -38,6 +32,7 @@ class TicketInfo extends Component {
                 </div>
                 ;
              break;
+             //вариант с билетом на 17 июня в центре
              case ('june17') :
                  info = <div id="hexGrid">
                  <div class="hex" id = "square4" >  <a href="#"></a>  <div class="hexIn">
@@ -58,6 +53,7 @@ class TicketInfo extends Component {
                 </div>
                 ;
              break;
+             //вариант с билетом на 26 июня в центре
              case ('26ofjune') :
                  info = <div id="hexGrid">
                  <div class="hex" id = "square5" >  <a href="#"></a>  <div class="hexIn">
@@ -80,6 +76,7 @@ class TicketInfo extends Component {
                 </div>
                 ;
              break;
+             //вариант с билетом на 16 июля в центре
              case ('16ofjuly') :
                  info = <div id="hexGrid">
                    <div class="hex" id="square2" >  <div class="hexIn">
@@ -102,7 +99,7 @@ class TicketInfo extends Component {
                 </div>
                 ;
              break;
-            
+            //вариант с билетом на 30 сентября в центре
              case ('30ofseptember') :
                      info = <div id="hexGrid">
                   
@@ -127,7 +124,7 @@ class TicketInfo extends Component {
         } 
     
     }
-
+// удостоверяемся что передаем строку
 TicketInfo.propTypes = {
 type: PropTypes.string.isRequired
 

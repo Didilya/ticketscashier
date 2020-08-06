@@ -9,10 +9,7 @@ class TicketCashier extends Component {
     
     state = {
           info: {
-             may30: 1,
-             june17:1,
-             stadium: 1,
-             competitors:1
+          
           }  
 
     }

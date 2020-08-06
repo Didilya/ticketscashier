@@ -1,8 +1,7 @@
 
-
+/* для левого блока с соперником */
 .contestLeft {
   position: absolute;
-  /* цвет текста, забивки и т. п. */
   margin-left: 0px; 
 width: 100%; 
 height: 50px;
@@ -17,9 +16,9 @@ padding-top: 15px;
   font-weight: 300;
   }
 
+/* для правого блока с соперником */
   .contestRight {
     position: absolute;
-    /* цвет текста, забивки и т. п. */
     margin-left: 0px; 
   width: 150%; 
   height: 50px;
@@ -34,7 +33,7 @@ padding-top: 15px;
   font-size: 20px;
     }
   .contest::before {
-  content: »;  /* чтобы сгенерировать поле */
+  content: »;  
   position: absolute;
   top: 60%; left: 20%;
   z-index: 200;
@@ -42,6 +41,7 @@ padding-top: 15px;
   transform: skew(45deg);
   }
 
+/* рисуем гексагон */
 
   #hexGrid {
     display: flex;
@@ -140,8 +140,6 @@ padding-top: 15px;
   
   
   .hex b div  {
-
-
     text-align: center;
     display: flex;
     align-items: top;
